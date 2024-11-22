@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main img {
+    margin-top: 100px;
+    height: 400px;
+    position: relative;
+    z-index: 99;
+    
+}
+#div-scroll{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 200px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden; 
+}
+#div-scroll::-webkit-scrollbar{
+        display: none;
+    }
+
+#div-scroll h1{
+    display: inline-block;
+    font-size: 110px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name:running;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#div-scroll2{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 200px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    z-index: 100;
+}
+#div-scroll2::-webkit-scrollbar{
+        display: none;
+    }
+
+#div-scroll2 h1{
+    display: inline-block;
+    font-size: 110px;
+    text-transform: uppercase;
+    margin-right: 33px;
+    color: transparent;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-stroke-color: black;
+    animation-name:running;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+#div-scroll3{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 200px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden; 
+}
+#div-scroll3::-webkit-scrollbar{
+        display: none;
+    }
+
+#div-scroll3 h1{
+    display: inline-block;
+    font-size: 110px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name:running;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#text{
+    font-size: 25px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    z-index: 888;
+    text-align: center;
+    text-transform: uppercase;
+    /* background-color: brown; */
+}
+@keyframes running{
+
+   0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 30px));
+    }
+}
